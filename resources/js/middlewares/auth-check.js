@@ -1,11 +1,15 @@
 import i18n from '../i18n'
 
-export default function checkAuth({ next, store }) {
+export default async function checkAuth({ next, store }) {
     // console.log("check-auth middleware run ...");
     // console.log(store.getters["auth/user"]);
     if (!store.getters["auth/check"] && store.getters["auth/token"]) {
-        store.dispatch("auth/fetchUser");
-        return next();
+        await store.dispatch("auth/fetchUser");
+        if(store.getters["auth/check"]){
+            return next();
+        }else{
+            return next({ name: "login" });
+        }
     } else if (store.getters["auth/check"] && store.getters["auth/token"]) {
         return next();
     } else {
