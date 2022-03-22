@@ -83,7 +83,7 @@ export default {
         return {
             form: new Form({
                 email: 'demo@demo.com',
-                password: '123456789',
+                password: 'password',
                 remember: false
             }),
             error:null,
