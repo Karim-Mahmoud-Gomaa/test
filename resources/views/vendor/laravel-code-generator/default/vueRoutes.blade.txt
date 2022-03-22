@@ -1,0 +1,3 @@
+# {{CodeHelper::title($model->name)}} Vue Routes for index.php
+{path:'/{{CodeHelper::plural(CodeHelper::snake($model->name))}}',name: '{{CodeHelper::plural(CodeHelper::snake($model->name))}}',component:()=>import('../pages/{{Str::plural($model->name)}}/Index'),meta:{title: '{{Str::plural($model->name)}}',middleware: [auth, checkAuth]}},
+{path:'/{{CodeHelper::plural(CodeHelper::snake($model->name))}}/:{{CodeHelper::snake($model->name)}}_id',name: '{{CodeHelper::snake($model->name)}}_show',component:()=>import('../pages/{{Str::plural($model->name)}}/Show'),meta:{title: '{{$model->name}} Details',middleware: [auth, checkAuth]}},

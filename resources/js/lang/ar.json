@@ -1,0 +1,13 @@
+{
+    "lang": "ar",
+    "dir": "rtl",
+    "classFont": "ar-font",
+    "titles":{
+        "sign_out":"تسجيل الخروج",
+        "edit_profile":"تعديل بياناتي"
+    },
+    "general":{
+        "sign_out":"تسجيل الخروج",
+        "edit_profile":"تعديل بياناتي"
+    }
+}

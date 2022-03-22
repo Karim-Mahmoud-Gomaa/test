@@ -1,0 +1,2 @@
+# {{CodeHelper::title($model->name)}} Routes for api.php
+Route::resource('{{CodeHelper::slug(CodeHelper::plural($model->name))}}', App\Http\Controllers\API\{{CodeHelper::plural($model->name)}}Controller::class);

@@ -1,0 +1,2 @@
+# {{CodeHelper::title($model->name)}} ServiceProvider for EventServiceProvider.php
+$this->app->bind("App\Repository\{{$model->name}}\{{$model->name}}RepositoryInterface", "App\Repository\{{$model->name}}\{{$model->name}}Repository");

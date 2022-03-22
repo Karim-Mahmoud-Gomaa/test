@@ -1,0 +1,124 @@
+{
+    "lang": "en",
+    "dashboard": "Dashboard",
+    "header":{
+        "sign_out":"Sign Out",
+        "edit_profile":"Edit Profile"
+    },
+    "nav":{
+        "menu":"MENU",
+        "home": "Home Page",
+        "general": {
+            "name": "General",
+            "categories": "Categories",
+            "promos": "Promo Codes",
+            "products": "Products",
+            "policies": "Policies",
+            "colors": "Colors",
+            "notes": "Notes",
+            "clients":"Clients",
+            "admins":"Admins",
+            "carts": "Orders",
+            "branches": "Branches",
+            "services": "Services",
+            "payments": "Payments",
+            "rates":"Rates",
+            "clients_rates":"Clients Rates",
+            "visitors_rates": "Visitors Rates"
+        }
+    },
+    "modals":{
+        "general":{
+            "description":"Description",
+            "title":"Title",
+            "code":"Code",
+            "comment":"Comment",
+            "image":"Image",
+            "price":"Price",
+            "money":"Money",
+            "disc":"Discount",
+            "qty":"Quantity",
+            "size":"Size",
+            "edit":"Edit",
+            "save":"Save",
+            "show":"Show",
+            "more":"More",
+            "name":"Name",
+            "close":"Close",
+            "table":"Table",
+            "delete":"Delete",
+            "active":"Activation",
+            "cancel":"Cancel",
+            "create":"Create",
+            "created_by":"Created By",
+            "update":"Update",
+            "add_new":"Add New",
+            "warning":"Warning",
+            "total":"Total",
+            "options":"Options",
+            "search":"Search...",
+            "arabic_name":"Arabic Name",
+            "yes_delete":"Yes,Delete It!",
+            "english_name":"English Name",
+            "y_d_h":"You Don't Have Any `{0}`..",
+            "delete_success":"Successfully Deleted",
+            "deleted":"Deleted!",
+            "created_at":"Created At",
+            "r_u_s":"Are you sure you want to remove this row?"
+        },
+        "categories":{
+            "category":"Category",
+            "is_active":"Active This Category",
+            "isActive":"Active Category"
+        },
+        "products":{
+            "is_active":"Active This Product",
+            "isActive":"Active Product"
+        },
+        "promos":{
+            "is_active":"Active This Code",
+            "isActive":"Active Code",
+            "isNotActive":"Not Active"
+        },
+        "items":{
+            "item":"Item",
+            "is_active":"Active This Product",
+            "isActive":"Active Product",
+            "has_parent":"Has Parent",
+            "is_default":"Is Default"
+        },
+        "policies":{
+            "created_by":"Created By",
+            "updated_by":"Updated By",
+            "last_updated":"Last Update"
+        },
+        "clients":{
+            "client":"Client",
+            "phone":"Phone",
+            "address":"Address"
+        },
+        "admins":{
+            "role":"Roles",
+            "password":"Password"
+        },
+        "carts":{
+            "order":"Order",
+            "delivery_at":"Delivery At",
+            "print":"Print",
+            "print_all":"Print All",
+            "print_store":"Print Store",
+            "print_rate":"Print Rate"
+        },
+        "services":{
+            "isActive":"Active Service",
+            "is_active":"Active This Service"
+        },
+        "payments":{
+            "pay":"Pay",
+            "type":"Type",
+            "paid":"Paid",
+            "rest":"Rest Of The Money"
+        }
+       
+    }
+}
