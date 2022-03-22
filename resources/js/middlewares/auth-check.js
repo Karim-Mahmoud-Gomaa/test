@@ -9,6 +9,6 @@ export default function checkAuth({ next, store }) {
     } else if (store.getters["auth/check"] && store.getters["auth/token"]) {
         return next();
     } else {
-        return next(`login`);
+        return next(`admin/login`);
     }
 }

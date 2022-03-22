@@ -7,8 +7,13 @@ use File;
 class Article extends Model
 {
     protected $table = 'articles';
+    protected $appends = ['image_path'];
     protected $guarded = [];
-    
+
+    //////////////////////////////////////////////Attributes
+    public function getImagePathAttribute(){
+        return '/assets/images/articles';
+    }
     // //////////////////////////////////////////////Relations
     public function user()
     {
@@ -22,7 +27,7 @@ class Article extends Model
         parent::boot();
         static::deleting(function($model) { 
             // dd($model->image);
-             File::delete(public_path("/assets/images/articles").'/'.$model->image);
+            File::delete(public_path("/assets/images/articles").'/'.$model->image);
         });
     }
 }

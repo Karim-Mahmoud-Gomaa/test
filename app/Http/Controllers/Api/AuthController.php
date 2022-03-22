@@ -34,26 +34,4 @@ class AuthController extends Controller
         User::logout($request->user());
         return response()->json(['success' => 'done'], 200);
     }
-    public function backup(Request $request)
-    {
-        $output=shell_exec('cd '.base_path().' && php artisan backup:run --only-db --disable-notifications');
-        return response()->json(['success' => 'done'], 200);
-    }
-    public function tests(Request $request)
-    {
-        
-        // $connector = new WindowsPrintConnector("smb://DESKTOP-SMFCDPA/xprinter");
-        // $connector = new WindowsPrintConnector("USB001");
-        // $printer = new Printer($connector);
-        // $printer->text("sss");
-        // $printer->setFont();
-        // // Reset
-        // $printer->setBarcodeTextPosition(Printer::BARCODE_TEXT_BELOW);
-        // $printer->barcode("9876",Printer::BARCODE_CODE39);
-        // $printer->setBarcodeHeight(80);
-        // $printer->feed();
-        // $printer->cut();
-        return response()->json(['success' => 'done'], 200);
-    }
-    
 }

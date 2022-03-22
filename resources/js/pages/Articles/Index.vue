@@ -26,6 +26,7 @@
                                         <tr>
                                             <th>Category</th>
                                             <th>Title</th>
+                                            <th>Views</th>
                                             <th>Created By</th>
                                             <th>Created At</th>
                                             <th>Options</th>
@@ -35,6 +36,7 @@
                                         <tr v-for="(article,index) in articles.data">
                                             <td>{{article.category.name}}</td>
                                             <td>{{article.title}}</td>
+                                            <td>{{article.views}}</td>
                                             <td>{{article.user.name}}</td>
                                             <td>{{article.created_at| moment("DD/MM/YYYY")}}</td>
                                             <td>

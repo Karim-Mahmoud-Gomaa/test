@@ -5,6 +5,7 @@ namespace App\Repository\Article;
 use \Illuminate\Support\Facades\Facade;
 use App\Repository\Article\ArticleRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use App\Models\Article;
 
@@ -35,6 +36,14 @@ class ArticleService extends Facade
     
     public function count():int{
         return $this->ArticleRepository->count();
+    }
+    
+    public function addView(int $id):bool{
+        return $this->ArticleRepository->addView($id);
+    }
+    
+    public function byCategory(int $category_id):Collection{
+        return $this->ArticleRepository->byCategory($category_id);
     }
     
     

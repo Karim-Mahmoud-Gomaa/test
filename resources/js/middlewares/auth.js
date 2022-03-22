@@ -2,6 +2,6 @@ import i18n from '../i18n'
 
 export default function auth({next, store}) {
     // console.log("auth middlware run ...")
-    if (!store.getters["auth/check"]) return next(`login`)
+    if (!store.getters["auth/check"]) return next(`admin/login`)
     else return next();
 }

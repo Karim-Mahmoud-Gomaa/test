@@ -1,9 +1,9 @@
 /node_modules
-/public/index.php
+# /public/index.php
 /public/.htaccess
 /storage/*.key
 /vendor
-.env
+# .env
 .env.backup
 .phpunit.result.cache
 docker-compose.override.yml

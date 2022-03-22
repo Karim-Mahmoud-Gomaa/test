@@ -87,7 +87,7 @@ export default {
     fetchData() {
       axios.get('/api/home').then(({data}) => {
         this.categories=data.success.categories;
-        this.categories=data.success.categories;
+        this.articles=data.success.articles;
         this.users=data.success.users;
       });  
     },

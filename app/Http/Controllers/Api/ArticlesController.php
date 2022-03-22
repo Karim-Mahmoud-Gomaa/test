@@ -72,6 +72,23 @@ class ArticlesController extends Controller
         $success=Article::delete($article->id);
         return response()->json(['success' => $success], $this->successStatus);
     }
+    public function addView(Request $request)
+    {
+        $request->validate([
+            'article_id'=>'required|exists:articles,id',
+        ]);
+        $success=Article::addView($request->article_id);
+        return response()->json(['success' => $success], $this->successStatus);
+    }
+    
+    public function byCategory(Request $request)
+    {
+        $request->validate([
+            'category_id'=>'required|exists:categories,id',
+        ]);
+        $success=Article::byCategory($request->category_id);
+        return response()->json(['success' => $success], $this->successStatus);
+    }
     
     
     public function saveImage(Request $request)

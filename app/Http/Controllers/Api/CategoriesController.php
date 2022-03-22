@@ -55,5 +55,11 @@ class CategoriesController extends Controller
         $success=Category::delete($category->id);
         return response()->json(['success' => $success], $this->successStatus);
     }
+
+    public function allCategories(Request $request)
+    {
+        $success['categories']=Category::index(['id','name'],[],[],0);
+        return response()->json(['success' => $success], $this->successStatus);
+    }
     
 }

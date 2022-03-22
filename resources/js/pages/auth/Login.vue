@@ -82,8 +82,8 @@ export default {
     data() {
         return {
             form: new Form({
-                email: '',
-                password: '',
+                email: 'demo@test.com',
+                password: '123456789',
                 remember: false
             }),
             error:null,

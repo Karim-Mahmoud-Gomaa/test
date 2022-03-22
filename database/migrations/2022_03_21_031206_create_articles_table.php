@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id('id');
             $table->bigInteger('user_id');
             $table->bigInteger('category_id');
+            $table->bigInteger('views')->default(0);
             $table->string('title');
             $table->string('image')->nullable();
             $table->timestamps();

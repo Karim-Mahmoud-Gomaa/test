@@ -31352,7 +31352,7 @@ function checkAuth(_ref) {
   } else if (store.getters["auth/check"] && store.getters["auth/token"]) {
     return next();
   } else {
-    return next("login");
+    return next("admin/login");
   }
 }
 
@@ -31374,7 +31374,7 @@ function auth(_ref) {
   var next = _ref.next,
       store = _ref.store;
   // console.log("auth middlware run ...")
-  if (!store.getters["auth/check"]) return next("login");else return next();
+  if (!store.getters["auth/check"]) return next("admin/login");else return next();
 }
 
 /***/ }),
@@ -31453,7 +31453,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: '/',
       name: 'home',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ../pages/Home */ "./resources/js/pages/Home.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! ../pages/Home */ "./resources/js/pages/Home.vue"));
       },
       meta: {
         title: 'Home',
@@ -31463,7 +31463,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'login',
       name: 'login',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ../pages/auth/Login */ "./resources/js/pages/auth/Login.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! ../pages/auth/Login */ "./resources/js/pages/auth/Login.vue"));
       },
       meta: {
         title: 'Login',
@@ -31474,7 +31474,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'categories',
       name: 'categories',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../pages/Categories/Index */ "./resources/js/pages/Categories/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../pages/Categories/Index */ "./resources/js/pages/Categories/Index.vue"));
       },
       meta: {
         title: 'Categories',
@@ -31484,7 +31484,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'articles',
       name: 'articles',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Index */ "./resources/js/pages/Articles/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Index */ "./resources/js/pages/Articles/Index.vue"));
       },
       meta: {
         title: 'Articles',
@@ -31494,7 +31494,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'articles/create',
       name: 'create_articles',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(8), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Create */ "./resources/js/pages/Articles/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(4), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Create */ "./resources/js/pages/Articles/Create.vue"));
       },
       meta: {
         title: 'Create Articles',
@@ -31504,7 +31504,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'articles/:article_id',
       name: 'edit_articles',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(8), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Edit */ "./resources/js/pages/Articles/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(4), __webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ../pages/Articles/Edit */ "./resources/js/pages/Articles/Edit.vue"));
       },
       meta: {
         title: 'Edit Article',
@@ -31514,7 +31514,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
       path: 'users',
       name: 'users',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../pages/Users/Index */ "./resources/js/pages/Users/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ../pages/Users/Index */ "./resources/js/pages/Users/Index.vue"));
       },
       meta: {
         title: 'Users',
@@ -31525,7 +31525,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
     path: '/*',
     name: '404',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../pages/errors/404 */ "./resources/js/pages/errors/404.vue"));
+      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../pages/errors/404 */ "./resources/js/pages/errors/404.vue"));
     },
     meta: {
       title: '404'
