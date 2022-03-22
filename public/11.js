@@ -102,7 +102,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MOD
   data: function data() {
     return {
       form: new vform__WEBPACK_IMPORTED_MODULE_1__["Form"]({
-        email: 'demo@test.com',
+        email: 'demo@demo.com',
         password: '123456789',
         remember: false
       }),

@@ -82,7 +82,7 @@ export default {
     data() {
         return {
             form: new Form({
-                email: 'demo@test.com',
+                email: 'demo@demo.com',
                 password: '123456789',
                 remember: false
             }),
